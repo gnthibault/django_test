@@ -18,14 +18,18 @@ Add new dependencies
 ```bash
 poetry add django
 poetry add django-debug-toolbar
-poetry run django-admin startproject django_app .
+poetry run django-admin startproject django_app . # Creates whole project
 ```
 
 Run server
 
 ```bash
-poetry run python manage.py runserver
-poetry run python manage.py startapp playground
+poetry run python manage.py runserver # Runs ...
+poetry run python manage.py startapp playground # Adds a subdirectory with preconfigured set of files for this module
+# Think about adding the INSTALLED_APPS from your main appl directory settings.py
+poetry run python manage.py makemigrations # creates migrations files, for instance when models are changed
+poetry run python manage.py sqlmigrate your_app_name 004 # generates SQL code for you migration id 004 and shows it just to check
+poetry run python manage.py migrate # Actually apply the migrations generated at the makemigrations step
 ```
 ## Project checkout
 
