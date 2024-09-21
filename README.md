@@ -17,6 +17,7 @@ git push --set-upstream origin main
 Add new dependencies
 ```bash
 poetry add django
+poetry add django-debug-toolbar
 poetry run django-admin startproject django_app .
 ```
 
