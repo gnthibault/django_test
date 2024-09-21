@@ -17,13 +17,20 @@ git push --set-upstream origin main
 Add new dependencies
 ```bash
 poetry add django
+poetry run django-admin startproject django_app .
 ```
 
+Run server
+
+```bash
+poetry run python manage.py runserver
+```
 ## Project checkout
 
 
 ```bash
 git clone git@github.com:gnthibault/django_test.git
 cf django_test
+deactivate
 poetry install
 ```
