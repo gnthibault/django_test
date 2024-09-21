@@ -24,6 +24,7 @@ Run server
 
 ```bash
 poetry run python manage.py runserver
+poetry run python manage.py startapp playground
 ```
 ## Project checkout
 
